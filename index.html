@@ -23,9 +23,9 @@
             <li ng-repeat="items in test.listItem | filter: itemFilter track by $index">{{items}}<a ng-click="test.removeItem($index)" href=""><i class="material-icons">clear</i></a></li>
         </ol>
 
-        <input type="text" ng-model="addItem" placeholder="Add your to do" value="">
+        <input type="text" ng-model="test.newItem" placeholder="Add your to do" value="">
 
-        <button ng-click="test.addItem(addItem)">Add</button>
+        <button ng-click="test.addItem(test.newItem)">Add</button>
     </div>
 
 
