@@ -69,28 +69,39 @@ h2 {
     font-family: 'Open Sans', sans-serif;
 }
 
+ol{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 li{
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     margin-right: 35px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* display: block; */
+    /* justify-content: space-between; */
+    /* align-items: center; */
     padding: 4px 6px 4px 6px;   
+    float: left;
 }
 
 li:hover {
     background-color: #bbbbbb;
     border-radius: 3%;
     padding: 4px 6px 4px 6px;
+    /* float:right; */
 }
 
 .material-icons:hover {
-    margin-left: auto;
+
+    float: right;
+    /* margin-left: auto; */
     color: #ff0000;
 }
 
 .material-icons {
-    margin-left: auto;
+    float: right;
+    /* margin-left: auto; */
     color: black;
 }
